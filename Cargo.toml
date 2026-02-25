@@ -1,10 +1,10 @@
 [package]
 name = "playfair-core"
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-license.workspace = true
+version = "0.1.0"
+edition = "2021"
+authors = ["Jeffrey C. Wolf"]
+license = "MIT"
 
 [dependencies]
-iced.workspace = true
-serde.workspace = true
+iced = { version = "0.14", features = ["wgpu", "tokio", "advanced", "markdown", "image"] }
+serde = { version = "1.0", features = ["derive"] }
