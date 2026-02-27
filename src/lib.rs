@@ -42,8 +42,12 @@ pub const LUCIDE_FONT_BYTES: &[u8] = include_bytes!("../assets/fonts/Lucide.ttf"
 /// An [`iced::Font`] descriptor that references the loaded Lucide icon font by name.
 pub const LUCIDE_FONT: iced::Font = iced::Font::with_name("Lucide");
 
+pub mod prelude;
+
 // Re-export commonly used items
 pub use colors::SemanticColors;
 pub use iced::{Color, Font};
 pub use theme::Theme;
+pub use theme::ThemeState;
+pub use iced::Theme as IcedTheme;
 pub use typography::{default_font, monospace_font};

@@ -7,4 +7,8 @@ license = "MIT"
 
 [dependencies]
 iced = { version = "0.14", features = ["wgpu", "tokio", "advanced", "markdown", "image"] }
+iced_aw = { version = "0.13", optional = true }
 serde = { version = "1.0", features = ["derive"] }
+
+[features]
+iced_aw = ["dep:iced_aw"]
