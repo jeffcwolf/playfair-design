@@ -107,6 +107,63 @@ impl Theme {
     }
 }
 
+/// Convenience wrapper for storing a Playfair theme in app state.
+///
+/// Embed this in your application's top-level state struct.
+///
+/// # Example
+///
+/// ```rust,ignore
+/// pub struct AppState {
+///     pub theme: playfair_core::ThemeState,
+/// }
+///
+/// // In main.rs, wire to iced:
+/// iced::application(boot, update, view)
+///     .theme(|state: &AppState| state.theme.to_iced())
+///     .run()
+///
+/// // In any view function:
+/// button(text("Save"))
+///     .style(playfair_core::styles::btn::primary(state.theme.as_ref()))
+///
+/// // Access semantic colors:
+/// let colors = state.theme.colors();
+/// text("Hello").color(colors.text_primary)
+/// ```
+pub struct ThemeState {
+    pub theme: Theme,
+}
+
+impl ThemeState {
+    pub fn new(theme: Theme) -> Self {
+        Self { theme }
+    }
+
+    /// Convert to iced's theme type for use with `.theme()` on the
+    /// application builder.
+    pub fn to_iced(&self) -> IcedTheme {
+        self.theme.to_iced()
+    }
+
+    /// Get semantic colors for the current theme.
+    pub fn colors(&self) -> crate::SemanticColors {
+        self.theme.colors()
+    }
+}
+
+impl Default for ThemeState {
+    fn default() -> Self {
+        Self::new(Theme::default())
+    }
+}
+
+impl AsRef<Theme> for ThemeState {
+    fn as_ref(&self) -> &Theme {
+        &self.theme
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

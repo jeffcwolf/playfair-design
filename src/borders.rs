@@ -29,6 +29,10 @@ pub mod radius {
     /// Pill shape (999px)
     /// Used for: Tags, badges, pill buttons
     pub const PILL: f32 = 999.0;
+
+    /// Full rounding (999px)
+    /// Used for: Scrollbar tracks, slider rails, circular elements
+    pub const FULL: f32 = 999.0;
 }
 
 /// Border width values
