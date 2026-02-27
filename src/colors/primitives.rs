@@ -165,3 +165,96 @@ pub mod sepia {
     // Muted red
     pub const RED_500: Color = Color::from_rgb(0.78, 0.35, 0.35); // #C75959
 }
+
+/// Sage theme color primitives — soft green-gray surfaces with forest-teal accents
+pub mod sage {
+    use super::Color;
+
+    // Green-gray neutrals — 50 to 900 scale
+    pub const GRAY_50: Color = Color::from_rgb(0.92, 0.94, 0.90); // #EBF0E6
+    pub const GRAY_100: Color = Color::from_rgb(0.89, 0.91, 0.87); // #E3E8DE
+    pub const GRAY_200: Color = Color::from_rgb(0.85, 0.87, 0.83); // #D9DED4
+    pub const GRAY_300: Color = Color::from_rgb(0.78, 0.80, 0.76); // #C7CCC2
+    pub const GRAY_400: Color = Color::from_rgb(0.64, 0.67, 0.62); // #A3AB9E
+    pub const GRAY_500: Color = Color::from_rgb(0.50, 0.54, 0.48); // #808A7A
+    pub const GRAY_600: Color = Color::from_rgb(0.36, 0.40, 0.34); // #5C6657
+    pub const GRAY_700: Color = Color::from_rgb(0.28, 0.32, 0.26); // #475242
+    pub const GRAY_800: Color = Color::from_rgb(0.20, 0.24, 0.19); // #333D30
+    pub const GRAY_900: Color = Color::from_rgb(0.16, 0.19, 0.15); // #293026
+
+    // Forest/teal green accent
+    pub const GREEN_400: Color = Color::from_rgb(0.34, 0.60, 0.49); // #57997D
+    pub const GREEN_500: Color = Color::from_rgb(0.28, 0.53, 0.42); // #47876B
+    pub const GREEN_600: Color = Color::from_rgb(0.22, 0.45, 0.35); // #387359
+
+    pub const SURFACE: Color = Color::from_rgb(0.82, 0.84, 0.80); // #D1D6CC
+    pub const SURFACE_2: Color = Color::from_rgb(0.85, 0.87, 0.83); // #D9DED4
+    pub const SURFACE_3: Color = Color::from_rgb(0.78, 0.80, 0.76); // #C7CCC2
+
+    // Muted status colors (similar approach to Sepia)
+    pub const STATUS_GREEN: Color = Color::from_rgb(0.40, 0.62, 0.38); // #669E61
+    pub const STATUS_ORANGE: Color = Color::from_rgb(0.80, 0.62, 0.28); // #CC9E47
+    pub const STATUS_RED: Color = Color::from_rgb(0.75, 0.34, 0.32); // #BF5752
+}
+
+/// Slate theme color primitives — cool blue-gray dark surfaces with steel blue accents
+pub mod slate {
+    use super::Color;
+
+    // Cool blue-gray neutrals — lower numbers = darker, higher = lighter (dark theme convention)
+    pub const GRAY_50: Color = Color::from_rgb(0.14, 0.16, 0.20); // #242933
+    pub const GRAY_100: Color = Color::from_rgb(0.18, 0.20, 0.24); // #2E333D
+    pub const GRAY_200: Color = Color::from_rgb(0.22, 0.24, 0.28); // #383D47
+    pub const GRAY_300: Color = Color::from_rgb(0.28, 0.31, 0.36); // #474F5C
+    pub const GRAY_400: Color = Color::from_rgb(0.40, 0.44, 0.50); // #667080
+    pub const GRAY_500: Color = Color::from_rgb(0.52, 0.56, 0.63); // #858FA1
+    pub const GRAY_600: Color = Color::from_rgb(0.62, 0.66, 0.72); // #9EA8B8
+    pub const GRAY_700: Color = Color::from_rgb(0.74, 0.77, 0.82); // #BDC4D1
+    pub const GRAY_800: Color = Color::from_rgb(0.84, 0.86, 0.90); // #D6DBE6
+    pub const GRAY_900: Color = Color::from_rgb(0.90, 0.92, 0.95); // #E6EBF2
+
+    // Steel blue accent
+    pub const STEEL_400: Color = Color::from_rgb(0.50, 0.68, 0.90); // #80ADE6
+    pub const STEEL_500: Color = Color::from_rgb(0.40, 0.60, 0.82); // #6699D1
+    pub const STEEL_600: Color = Color::from_rgb(0.32, 0.52, 0.73); // #5285BA
+
+    pub const SURFACE: Color = Color::from_rgb(0.22, 0.24, 0.28); // #383D47
+    pub const SURFACE_2: Color = Color::from_rgb(0.26, 0.28, 0.32); // #424752
+    pub const SURFACE_3: Color = Color::from_rgb(0.18, 0.20, 0.24); // #2E333D
+
+    // Bright status colors for dark background
+    pub const STATUS_GREEN: Color = Color::from_rgb(0.30, 0.82, 0.45); // #4DD173
+    pub const STATUS_ORANGE: Color = Color::from_rgb(1.0, 0.68, 0.18); // #FFAD2E
+    pub const STATUS_RED: Color = Color::from_rgb(1.0, 0.38, 0.36); // #FF615C
+}
+
+/// Ember theme color primitives — warm dark charcoal surfaces with copper/burnt-orange accents
+pub mod ember {
+    use super::Color;
+
+    // Warm brown-gray neutrals — lower numbers = darker, higher = lighter (dark theme convention)
+    pub const GRAY_50: Color = Color::from_rgb(0.11, 0.09, 0.08); // #1C1714
+    pub const GRAY_100: Color = Color::from_rgb(0.14, 0.12, 0.11); // #241E1C
+    pub const GRAY_200: Color = Color::from_rgb(0.18, 0.15, 0.14); // #2E2624
+    pub const GRAY_300: Color = Color::from_rgb(0.25, 0.21, 0.19); // #403630
+    pub const GRAY_400: Color = Color::from_rgb(0.40, 0.35, 0.31); // #66594F
+    pub const GRAY_500: Color = Color::from_rgb(0.54, 0.48, 0.43); // #8A7A6E
+    pub const GRAY_600: Color = Color::from_rgb(0.64, 0.58, 0.52); // #A39485
+    pub const GRAY_700: Color = Color::from_rgb(0.76, 0.70, 0.64); // #C2B3A3
+    pub const GRAY_800: Color = Color::from_rgb(0.85, 0.80, 0.75); // #D9CCBF
+    pub const GRAY_900: Color = Color::from_rgb(0.92, 0.89, 0.85); // #EBE3D9
+
+    // Copper/burnt-orange accent
+    pub const COPPER_400: Color = Color::from_rgb(0.88, 0.60, 0.36); // #E0995C
+    pub const COPPER_500: Color = Color::from_rgb(0.80, 0.52, 0.30); // #CC854D
+    pub const COPPER_600: Color = Color::from_rgb(0.70, 0.44, 0.24); // #B3703D
+
+    pub const SURFACE: Color = Color::from_rgb(0.18, 0.15, 0.14); // #2E2624
+    pub const SURFACE_2: Color = Color::from_rgb(0.22, 0.19, 0.17); // #38302B
+    pub const SURFACE_3: Color = Color::from_rgb(0.14, 0.12, 0.11); // #241E1C
+
+    // Warm-tinted bright status colors for dark background
+    pub const STATUS_GREEN: Color = Color::from_rgb(0.35, 0.78, 0.40); // #59C766
+    pub const STATUS_ORANGE: Color = Color::from_rgb(1.0, 0.70, 0.25); // #FFB340
+    pub const STATUS_RED: Color = Color::from_rgb(1.0, 0.42, 0.35); // #FF6B59
+}

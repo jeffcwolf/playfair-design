@@ -2,7 +2,7 @@
 //! Semantic color system for the Playfair design system
 //!
 //! This module provides a comprehensive color palette with semantic naming
-//! that works across all themes (Light, Dark, Sepia).
+//! that works across all themes (Light, Dark, Sepia, Ocean, Twilight, Sage, Slate, Ember).
 
 pub mod primitives;
 pub mod semantic;
@@ -20,6 +20,9 @@ impl Theme {
             Theme::Sepia => semantic::sepia(),
             Theme::Ocean => semantic::ocean(),
             Theme::Twilight => semantic::twilight(),
+            Theme::Sage => semantic::sage(),
+            Theme::Slate => semantic::slate(),
+            Theme::Ember => semantic::ember(),
         }
     }
 }

@@ -5,7 +5,7 @@
 //! not their appearance. This allows themes to change while maintaining
 //! semantic consistency.
 
-use super::primitives::{dark, light, ocean, sepia, twilight};
+use super::primitives::{dark, ember, light, ocean, sage, sepia, slate, twilight};
 use iced::Color;
 
 /// Semantic colors for UI components
@@ -262,5 +262,134 @@ pub fn sepia() -> SemanticColors {
         state_success: sepia::GREEN_500,
         state_warning: sepia::ORANGE_500,
         state_error: sepia::RED_500,
+    }
+}
+
+/// Sage theme semantic colors — muted green-gray light-mid theme
+pub fn sage() -> SemanticColors {
+    SemanticColors {
+        // Surfaces
+        surface_primary: sage::SURFACE,
+        surface_secondary: sage::SURFACE_2,
+        surface_tertiary: sage::SURFACE_3,
+        surface_hover: sage::GRAY_300,
+        surface_selected: Color::from_rgba(0.28, 0.53, 0.42, 0.15), // GREEN_500 at ~15% alpha
+        surface_disabled: sage::GRAY_300,
+
+        // Text
+        text_primary: sage::GRAY_900,
+        text_secondary: sage::GRAY_600,
+        text_tertiary: sage::GRAY_500,
+        text_disabled: sage::GRAY_400,
+        text_on_primary: Color::WHITE,
+
+        // Borders
+        border_default: sage::GRAY_300,
+        border_hover: sage::GRAY_400,
+        border_focus: sage::GREEN_500,
+        border_divider: sage::GRAY_200,
+
+        // Actions
+        action_primary: sage::GREEN_500,
+        action_primary_hover: sage::GREEN_600,
+        action_primary_active: sage::GREEN_600,
+        action_secondary: sage::GRAY_200,
+        action_secondary_hover: sage::GRAY_300,
+        action_danger: sage::STATUS_RED,
+        action_danger_hover: Color::from_rgb(0.68, 0.30, 0.28), // #AD4D47
+        action_success: sage::STATUS_GREEN,
+        action_warning: sage::STATUS_ORANGE,
+
+        // States
+        state_info: sage::GREEN_500,
+        state_success: sage::STATUS_GREEN,
+        state_warning: sage::STATUS_ORANGE,
+        state_error: sage::STATUS_RED,
+    }
+}
+
+/// Slate theme semantic colors — cool blue-gray dark-mid theme
+pub fn slate() -> SemanticColors {
+    SemanticColors {
+        // Surfaces
+        surface_primary: slate::SURFACE,
+        surface_secondary: slate::SURFACE_2,
+        surface_tertiary: slate::SURFACE_3,
+        surface_hover: slate::GRAY_300,
+        surface_selected: Color::from_rgba(0.40, 0.60, 0.82, 0.20), // STEEL_500 at ~20% alpha
+        surface_disabled: slate::GRAY_300,
+
+        // Text
+        text_primary: slate::GRAY_900,
+        text_secondary: slate::GRAY_600,
+        text_tertiary: slate::GRAY_500,
+        text_disabled: slate::GRAY_400,
+        text_on_primary: Color::WHITE,
+
+        // Borders
+        border_default: slate::GRAY_300,
+        border_hover: slate::GRAY_400,
+        border_focus: slate::STEEL_500,
+        border_divider: slate::GRAY_200,
+
+        // Actions
+        action_primary: slate::STEEL_500,
+        action_primary_hover: slate::STEEL_400,
+        action_primary_active: slate::STEEL_600,
+        action_secondary: slate::GRAY_200,
+        action_secondary_hover: slate::GRAY_300,
+        action_danger: slate::STATUS_RED,
+        action_danger_hover: Color::from_rgb(0.90, 0.34, 0.32), // #E65752
+        action_success: slate::STATUS_GREEN,
+        action_warning: slate::STATUS_ORANGE,
+
+        // States
+        state_info: slate::STEEL_500,
+        state_success: slate::STATUS_GREEN,
+        state_warning: slate::STATUS_ORANGE,
+        state_error: slate::STATUS_RED,
+    }
+}
+
+/// Ember theme semantic colors — warm dark-mid theme with copper accents
+pub fn ember() -> SemanticColors {
+    SemanticColors {
+        // Surfaces
+        surface_primary: ember::SURFACE,
+        surface_secondary: ember::SURFACE_2,
+        surface_tertiary: ember::SURFACE_3,
+        surface_hover: ember::GRAY_300,
+        surface_selected: Color::from_rgba(0.80, 0.52, 0.30, 0.20), // COPPER_500 at ~20% alpha
+        surface_disabled: ember::GRAY_300,
+
+        // Text
+        text_primary: ember::GRAY_900,
+        text_secondary: ember::GRAY_600,
+        text_tertiary: ember::GRAY_500,
+        text_disabled: ember::GRAY_400,
+        text_on_primary: Color::WHITE,
+
+        // Borders
+        border_default: ember::GRAY_300,
+        border_hover: ember::GRAY_400,
+        border_focus: ember::COPPER_500,
+        border_divider: ember::GRAY_200,
+
+        // Actions
+        action_primary: ember::COPPER_500,
+        action_primary_hover: ember::COPPER_400,
+        action_primary_active: ember::COPPER_600,
+        action_secondary: ember::GRAY_200,
+        action_secondary_hover: ember::GRAY_300,
+        action_danger: ember::STATUS_RED,
+        action_danger_hover: Color::from_rgb(0.90, 0.38, 0.31), // #E6614F
+        action_success: ember::STATUS_GREEN,
+        action_warning: ember::STATUS_ORANGE,
+
+        // States
+        state_info: ember::COPPER_500,
+        state_success: ember::STATUS_GREEN,
+        state_warning: ember::STATUS_ORANGE,
+        state_error: ember::STATUS_RED,
     }
 }
