@@ -12,6 +12,9 @@ pub enum Theme {
     Sepia,
     Ocean,
     Twilight,
+    Sage,
+    Slate,
+    Ember,
 }
 
 impl Theme {
@@ -33,6 +36,9 @@ impl Theme {
             ),
             Theme::Ocean => IcedTheme::custom("Ocean".to_string(), self.palette()),
             Theme::Twilight => IcedTheme::custom("Twilight".to_string(), self.palette()),
+            Theme::Sage => IcedTheme::custom("Sage".to_string(), self.palette()),
+            Theme::Slate => IcedTheme::custom("Slate".to_string(), self.palette()),
+            Theme::Ember => IcedTheme::custom("Ember".to_string(), self.palette()),
         }
     }
 
@@ -65,6 +71,30 @@ impl Theme {
                 danger: Color::from_rgb(1.0, 0.40, 0.38),      // twilight RED_500
                 warning: Color::from_rgb(1.0, 0.72, 0.22),     // twilight ORANGE_500
             },
+            Theme::Sage => Palette {
+                background: Color::from_rgb(0.82, 0.84, 0.80), // sage SURFACE
+                text: Color::from_rgb(0.16, 0.19, 0.15),       // sage GRAY_900
+                primary: Color::from_rgb(0.28, 0.53, 0.42),    // sage GREEN_500
+                success: Color::from_rgb(0.40, 0.62, 0.38),    // sage STATUS_GREEN
+                danger: Color::from_rgb(0.75, 0.34, 0.32),     // sage STATUS_RED
+                warning: Color::from_rgb(0.80, 0.62, 0.28),    // sage STATUS_ORANGE
+            },
+            Theme::Slate => Palette {
+                background: Color::from_rgb(0.22, 0.24, 0.28), // slate SURFACE
+                text: Color::from_rgb(0.90, 0.92, 0.95),       // slate GRAY_900
+                primary: Color::from_rgb(0.40, 0.60, 0.82),    // slate STEEL_500
+                success: Color::from_rgb(0.30, 0.82, 0.45),    // slate STATUS_GREEN
+                danger: Color::from_rgb(1.0, 0.38, 0.36),      // slate STATUS_RED
+                warning: Color::from_rgb(1.0, 0.68, 0.18),     // slate STATUS_ORANGE
+            },
+            Theme::Ember => Palette {
+                background: Color::from_rgb(0.18, 0.15, 0.14), // ember SURFACE
+                text: Color::from_rgb(0.92, 0.89, 0.85),       // ember GRAY_900
+                primary: Color::from_rgb(0.80, 0.52, 0.30),    // ember COPPER_500
+                success: Color::from_rgb(0.35, 0.78, 0.40),    // ember STATUS_GREEN
+                danger: Color::from_rgb(1.0, 0.42, 0.35),      // ember STATUS_RED
+                warning: Color::from_rgb(1.0, 0.70, 0.25),     // ember STATUS_ORANGE
+            },
         }
     }
 
@@ -76,6 +106,9 @@ impl Theme {
             Theme::Sepia,
             Theme::Ocean,
             Theme::Twilight,
+            Theme::Sage,
+            Theme::Slate,
+            Theme::Ember,
         ]
     }
 
@@ -87,13 +120,22 @@ impl Theme {
             Theme::Sepia => "Sepia",
             Theme::Ocean => "Ocean",
             Theme::Twilight => "Twilight",
+            Theme::Sage => "Sage",
+            Theme::Slate => "Slate",
+            Theme::Ember => "Ember",
         }
     }
 
     /// Get the default font for this theme
     pub fn default_font(&self) -> iced::Font {
         match self {
-            Theme::Light | Theme::Dark | Theme::Ocean | Theme::Twilight => iced::Font::DEFAULT,
+            Theme::Light
+            | Theme::Dark
+            | Theme::Ocean
+            | Theme::Twilight
+            | Theme::Sage
+            | Theme::Slate
+            | Theme::Ember => iced::Font::DEFAULT,
             Theme::Sepia => iced::Font::with_name("SF Pro Text"), // macOS system font
         }
     }
@@ -101,7 +143,13 @@ impl Theme {
     /// Get the monospace font for this theme
     pub fn monospace_font(&self) -> iced::Font {
         match self {
-            Theme::Light | Theme::Dark | Theme::Ocean | Theme::Twilight => iced::Font::MONOSPACE,
+            Theme::Light
+            | Theme::Dark
+            | Theme::Ocean
+            | Theme::Twilight
+            | Theme::Sage
+            | Theme::Slate
+            | Theme::Ember => iced::Font::MONOSPACE,
             Theme::Sepia => iced::Font::with_name("SF Mono"), // macOS monospace
         }
     }
@@ -169,9 +217,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_all_returns_five_themes() {
+    fn test_all_returns_eight_themes() {
         let themes = Theme::all();
-        assert_eq!(themes.len(), 5);
+        assert_eq!(themes.len(), 8);
         assert_eq!(
             themes,
             &[
@@ -180,6 +228,9 @@ mod tests {
                 Theme::Sepia,
                 Theme::Ocean,
                 Theme::Twilight,
+                Theme::Sage,
+                Theme::Slate,
+                Theme::Ember,
             ]
         );
     }
@@ -217,6 +268,9 @@ mod tests {
         assert_eq!(Theme::Sepia.name(), "Sepia");
         assert_eq!(Theme::Ocean.name(), "Ocean");
         assert_eq!(Theme::Twilight.name(), "Twilight");
+        assert_eq!(Theme::Sage.name(), "Sage");
+        assert_eq!(Theme::Slate.name(), "Slate");
+        assert_eq!(Theme::Ember.name(), "Ember");
     }
 
     #[test]
