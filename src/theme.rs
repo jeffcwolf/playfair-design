@@ -198,6 +198,11 @@ impl ThemeState {
     pub fn colors(&self) -> crate::SemanticColors {
         self.theme.colors()
     }
+
+    /// Export the current theme's semantic colors as CSS custom properties.
+    pub fn to_css_tokens(&self) -> std::collections::HashMap<String, String> {
+        self.theme.to_css_tokens()
+    }
 }
 
 impl Default for ThemeState {

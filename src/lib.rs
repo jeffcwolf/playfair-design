@@ -45,9 +45,10 @@ pub const LUCIDE_FONT: iced::Font = iced::Font::with_name("Lucide");
 pub mod prelude;
 
 // Re-export commonly used items
+pub use colors::color_to_css_hex;
 pub use colors::SemanticColors;
+pub use iced::Theme as IcedTheme;
 pub use iced::{Color, Font};
 pub use theme::Theme;
 pub use theme::ThemeState;
-pub use iced::Theme as IcedTheme;
 pub use typography::{default_font, monospace_font};
