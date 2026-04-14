@@ -1,8 +1,3 @@
-//! Convenience re-exports for Iced app authors.
-//!
-//! Add `use playfair_core::prelude::*;` to your app to get all commonly
-//! needed items without managing individual imports.
-
 pub use crate::borders;
 pub use crate::icons;
 pub use crate::spacing;
