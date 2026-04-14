@@ -1,4 +1,4 @@
-// playfair-core/src/styles/text.rs
+// playfair-design/src/styles/text.rs
 //! Text styling functions for consistent typography
 //!
 //! Provides semantic text styles that adapt to themes and

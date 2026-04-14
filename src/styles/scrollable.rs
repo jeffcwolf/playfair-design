@@ -1,4 +1,4 @@
-// playfair-core/src/styles/scrollable.rs
+// playfair-design/src/styles/scrollable.rs
 //! Scrollable container component styles with theme-aware variants
 //!
 //! Provides consistent scrollbar styling across all apps with proper

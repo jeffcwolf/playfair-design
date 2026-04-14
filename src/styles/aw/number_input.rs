@@ -1,4 +1,4 @@
-// playfair-core/src/styles/aw/number_input.rs
+// playfair-design/src/styles/aw/number_input.rs
 //! Number input component styles for iced_aw with theme-aware variants
 //!
 //! Provides consistent number input styling that maps Playfair's semantic

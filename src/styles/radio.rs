@@ -1,4 +1,4 @@
-// playfair-core/src/styles/radio.rs
+// playfair-design/src/styles/radio.rs
 //! Radio button component styles with theme-aware variants
 //!
 //! Provides consistent radio button styling across all apps with proper

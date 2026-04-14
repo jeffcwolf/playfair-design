@@ -1,4 +1,4 @@
-// playfair-core/src/colors/semantic.rs
+// playfair-design/src/colors/semantic.rs
 //! Semantic color tokens that map to specific UI purposes
 //!
 //! These colors have meaningful names that describe their purpose,

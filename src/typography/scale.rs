@@ -1,4 +1,4 @@
-// playfair-core/src/typography/scale.rs
+// playfair-design/src/typography/scale.rs
 //! Typography scale with harmonious font sizes
 //!
 //! Based on a modular scale (1.250 - Major Third) for visual rhythm

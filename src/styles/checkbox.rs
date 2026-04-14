@@ -1,4 +1,4 @@
-// playfair-core/src/styles/checkbox.rs
+// playfair-design/src/styles/checkbox.rs
 //! Checkbox component styles with theme-aware variants
 //!
 //! Provides consistent checkbox styling across all apps with proper

@@ -1,4 +1,4 @@
-// playfair-core/src/colors/primitives.rs
+// playfair-design/src/colors/primitives.rs
 //! Raw color primitives organized by theme and hue
 //!
 //! These are the base colors that semantic tokens are built from.

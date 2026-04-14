@@ -1,4 +1,4 @@
-// playfair-core/src/styles/aw/card.rs
+// playfair-design/src/styles/aw/card.rs
 //! Card component styles for iced_aw with theme-aware variants
 //!
 //! Provides consistent card styling that maps Playfair's semantic

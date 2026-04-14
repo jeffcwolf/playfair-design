@@ -1,4 +1,4 @@
-// playfair-core/src/styles/aw/tab_bar.rs
+// playfair-design/src/styles/aw/tab_bar.rs
 //! Tab bar component styles for iced_aw with theme-aware variants
 //!
 //! Provides consistent tab bar styling that maps Playfair's semantic

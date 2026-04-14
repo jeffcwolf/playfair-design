@@ -1,4 +1,4 @@
-// playfair-core/src/styles/button.rs
+// playfair-design/src/styles/button.rs
 //! Button component styles with semantic variants
 //!
 //! Provides consistent button styling across all apps with proper

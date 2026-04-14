@@ -1,4 +1,4 @@
-// playfair-core/src/styles/toggler.rs
+// playfair-design/src/styles/toggler.rs
 //! Toggler (toggle switch) component styles with theme-aware variants
 //!
 //! Provides consistent toggle switch styling across all apps with proper

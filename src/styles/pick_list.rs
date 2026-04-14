@@ -1,4 +1,4 @@
-// playfair-core/src/styles/pick_list.rs
+// playfair-design/src/styles/pick_list.rs
 //! Pick list (dropdown select) component styles with theme-aware variants
 //!
 //! Provides consistent pick list styling across all apps with proper

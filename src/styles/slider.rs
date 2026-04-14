@@ -1,4 +1,4 @@
-// playfair-core/src/styles/slider.rs
+// playfair-design/src/styles/slider.rs
 //! Slider component styles with theme-aware variants
 //!
 //! Provides consistent slider styling across all apps with proper

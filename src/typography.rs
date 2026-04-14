@@ -1,4 +1,4 @@
-// playfair-core/src/typography.rs
+// playfair-design/src/typography.rs
 //! Typography system with scales, weights, and semantic text styles
 //!
 //! Provides a complete typography foundation for consistent,

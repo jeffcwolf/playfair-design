@@ -1,4 +1,4 @@
-// playfair-core/src/borders.rs
+// playfair-design/src/borders.rs
 //! Border radius and width tokens for consistent styling
 
 /// Border radius values

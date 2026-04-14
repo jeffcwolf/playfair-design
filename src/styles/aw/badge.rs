@@ -1,4 +1,4 @@
-// playfair-core/src/styles/aw/badge.rs
+// playfair-design/src/styles/aw/badge.rs
 //! Badge component styles for iced_aw with theme-aware variants
 //!
 //! Provides consistent badge styling that maps Playfair's semantic

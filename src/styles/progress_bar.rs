@@ -1,4 +1,4 @@
-// playfair-core/src/styles/progress_bar.rs
+// playfair-design/src/styles/progress_bar.rs
 //! Progress bar component styles with theme-aware variants
 //!
 //! Provides consistent progress bar styling across all apps with

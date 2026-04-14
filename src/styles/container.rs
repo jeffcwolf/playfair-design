@@ -1,4 +1,4 @@
-// playfair-core/src/styles/container.rs
+// playfair-design/src/styles/container.rs
 //! Container component styles for panels, cards, and surfaces
 //!
 //! Provides semantic container styles that create visual hierarchy

@@ -1,4 +1,4 @@
-// playfair-core/src/styles/text_input.rs
+// playfair-design/src/styles/text_input.rs
 //! Text input field styles
 //!
 //! Provides consistent styling for input fields with proper

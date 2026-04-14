@@ -6,7 +6,7 @@
 //! Lucide icon helpers.
 //!
 //! **Adding a new icon:** look up the codepoint in
-//! `crates/playfair-core/assets/fonts/lucide-codepoints.txt`,
+//! `crates/playfair-design/assets/fonts/lucide-codepoints.txt`,
 //! then follow the pattern of any existing function below.
 
 0000  .notdef#1

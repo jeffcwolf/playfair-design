@@ -1,4 +1,4 @@
-// playfair-core/src/colors/mod.rs
+// playfair-design/src/colors/mod.rs
 //! Semantic color system for the Playfair design system
 //!
 //! This module provides a comprehensive color palette with semantic naming

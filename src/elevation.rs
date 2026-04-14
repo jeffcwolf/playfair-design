@@ -1,4 +1,4 @@
-// playfair-core/src/elevation.rs
+// playfair-design/src/elevation.rs
 //! Elevation system using shadows to create visual depth
 //!
 //! Inspired by Material Design and macOS, this creates a sense of layering

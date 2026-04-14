@@ -1,4 +1,4 @@
-// playfair-core/src/typography/weights.rs
+// playfair-design/src/typography/weights.rs
 //! Font weight tokens for typography hierarchy
 
 use iced::font::Weight;

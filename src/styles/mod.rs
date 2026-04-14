@@ -1,4 +1,4 @@
-// playfair-core/src/styles/mod.rs
+// playfair-design/src/styles/mod.rs
 //! Component styling functions for consistent UI appearance
 //!
 //! These modules provide reusable style functions for Iced widgets.
